@@ -6,7 +6,7 @@
 /*   By: frcastil <frcastil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 11:42:21 by frcastil          #+#    #+#             */
-/*   Updated: 2023/09/18 16:04:07 by frcastil         ###   ########.fr       */
+/*   Updated: 2023/11/07 15:24:18 by frcastil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	ft_start_game(t_game *game)
 {
 	/* atexit(ft_leaks); */
 	game->mlx = mlx_init(game->len_column * 32, game->len_row * 32, "so_long",
-			true);
+			false);
 	if (!game->mlx)
 		return (ft_printf("Error\nFailed to initialize MLX\n"), FALSE);
 	if (ft_textures(game) != TRUE)

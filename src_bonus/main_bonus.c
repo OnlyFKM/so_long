@@ -6,7 +6,7 @@
 /*   By: frcastil <frcastil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 11:42:21 by frcastil          #+#    #+#             */
-/*   Updated: 2023/09/18 16:03:54 by frcastil         ###   ########.fr       */
+/*   Updated: 2023/11/24 11:09:55 by frcastil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ void	ft_counter(t_game *game)
 
 	str = ft_itoa(game->total_moves);
 	mlx_image_to_window(game->mlx, game->image->wall, 0, 0);
-	mlx_put_string(game->mlx, str, 5, 5);
+	mlx_put_string(game->mlx, str, 10, 15);
 	free(str);
 }
 
