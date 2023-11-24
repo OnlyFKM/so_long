@@ -1,6 +1,6 @@
 # So_Long - Tu Aventura en 2D
 
-<img width="635" alt="Screen Shot 2023-09-26 at 12 06 57 PM" src="https://github.com/OnlyFKM/CURSO_42/assets/131867055/cf072398-33c0-407a-98b2-42478ce2dbc5">
+<img width="635" alt="Screen Shot 2023-09-26 at 12 06 57 PM" src="https://github.com/OnlyFKM/so_long/assets/131867055/bdb43bdc-72cc-40ca-aa0e-57680ce57697">
 
 ## Descripción
 So_Long es un emocionante juego en 2D que te desafía a navegar a través de un laberinto lleno de obstáculos, recoger objetos valiosos y alcanzar la salida. Pon a prueba tus habilidades de resolución de problemas y tu destreza mientras exploras este emocionante mundo en 2D.
