@@ -6,7 +6,7 @@
 /*   By: frcastil <frcastil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 16:25:13 by frcastil          #+#    #+#             */
-/*   Updated: 2023/09/18 15:56:37 by frcastil         ###   ########.fr       */
+/*   Updated: 2023/12/13 10:03:08 by frcastil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,18 @@ int	ft_textures(t_game *game)
 	game->texture = ft_calloc(1, sizeof(t_textures));
 	if (!game->texture)
 		return (FALSE);
-	game->texture->floor = mlx_load_png("../SO_LONG/textures/floor.png");
+	game->texture->floor = mlx_load_png("./textures/floor.png");
 	if (!game->texture->floor)
 		return (FALSE);
-	game->texture->wall = mlx_load_png("../SO_LONG/textures/wall.png");
+	game->texture->wall = mlx_load_png("./textures/wall.png");
 	if (!game->texture->wall)
 		return (FALSE);
 	game->texture->player_up = mlx_load_png
-		("../SO_LONG/textures/player_up.png");
+		("./textures/player_up.png");
 	if (!game->texture->player_up)
 		return (FALSE);
 	game->texture->player_down = mlx_load_png
-		("../SO_LONG/textures/player_down.png");
+		("./textures/player_down.png");
 	if (!game->texture->player_down)
 		return (FALSE);
 	return (ft_textures_2(game));
@@ -37,18 +37,18 @@ int	ft_textures(t_game *game)
 int	ft_textures_2(t_game *game)
 {
 	game->texture->player_left = mlx_load_png
-		("../SO_LONG/textures/player_left.png");
+		("./textures/player_left.png");
 	if (!game->texture->player_left)
 		return (FALSE);
 	game->texture->player_right = mlx_load_png
-		("../SO_LONG/textures/player_right.png");
+		("./textures/player_right.png");
 	if (!game->texture->player_right)
 		return (FALSE);
-	game->texture->exit = mlx_load_png("../SO_LONG/textures/exit.png");
+	game->texture->exit = mlx_load_png("./textures/exit.png");
 	if (!game->texture->exit)
 		return (FALSE);
 	game->texture->collectable = mlx_load_png
-		("../SO_LONG/textures/collectable.png");
+		("./textures/collectable.png");
 	if (!game->texture->collectable)
 		return (FALSE);
 	return (TRUE);

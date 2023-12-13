@@ -3,31 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: frcastil <frcastil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dbredykh <dbredykh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 12:47:21 by frcastil          #+#    #+#             */
-/*   Updated: 2023/10/02 15:42:49 by frcastil         ###   ########.fr       */
+/*   Updated: 2023/12/13 09:43:03 by dbredykh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	*ft_calloc(size_t count, size_t size)
-{
-	char	*mem;
-	size_t	i;
-
-	i = 0;
-	mem = malloc(count * size);
-	if (!mem)
-		return (0);
-	while (i < count * size)
-	{
-		mem[i] = 0;
-		i++;
-	}
-	return ((void *)mem);
-}
 
 int	ft_strchr(const char *s, int c)
 {
@@ -43,16 +26,6 @@ int	ft_strchr(const char *s, int c)
 		str++;
 	}
 	return (1);
-}
-
-size_t	ft_strlen(const char *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
 }
 
 char	*ft_strjoin(char *s1, char *s2)
