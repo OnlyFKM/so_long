@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: frcastil <frcastil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dbredykh <dbredykh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 16:50:46 by frcastil          #+#    #+#             */
-/*   Updated: 2023/06/28 12:45:33 by frcastil         ###   ########.fr       */
+/*   Updated: 2023/12/13 09:42:31 by dbredykh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,15 +22,3 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-/*
-int	main(void)
-{
-	int	i;
-	char	*ptr;
-
-	ptr = "Cuentame esta";
-	i = ft_strlen(ptr);
-	printf("%i", i);
-	return (0);
-}
-*/
