@@ -5,8 +5,18 @@ CFLAGS = -Wextra -Wall -Werror -Wunreachable-code -Ofast
 LIBMLX = ./MLX42
 LIBFT = ./libft
 
+OS := $(shell uname)
+
+ifeq ($(OS), Darwin)
+	# macOS specific flags
+	DOWNLIB = -lglfw -L "/Users/${USER}/.brew/opt/glfw/lib/"
+else
+	# Linux specific flags
+	DOWNLIB = -ldl -lglfw -pthread -lm
+endif
+
 HEADERS = -I ./inc -I $(LIBMLX)/include/MLX42 -I $(LIBFT)
-LIBS = $(LIBFT)/libft.a $(LIBMLX)/libmlx42.a -lglfw -L "/Users/$(USER)/.brew/opt/glfw/lib/" 
+LIBS = $(LIBFT)/libft.a $(LIBMLX)/libmlx42.a $(DOWNLIB)
 
 SRCS = src/main.c\
 	src/map_check.c\
@@ -39,7 +49,7 @@ OBJS_BONUS = ${BONUS:.c=.o}
 
 %.o: %.c
 	@$(CC) $(CFLAGS) -o $@ -c $< $(HEADERS) && printf "Compiling: $(notdir $<)\n"
-	
+
 $(NAME): $(OBJS) $(LIBFT)/libft.a $(LIBMLX)/libmlx.a
 	@$(CC) -g $(CFLAGS) $(OBJS) $(LIBS) $(HEADERS) -o $(NAME)
 
@@ -62,7 +72,7 @@ clean:
 fclean: clean
 	@rm -rf $(NAME) $(NAME_BONUS)
 	@make -C $(LIBFT) fclean
-	@make -C $(LIBMLX) clean
+	@make -C $(LIBMLX) fclean
 
 re: fclean all
 
