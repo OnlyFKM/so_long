@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+         #
+#    By: frcastil <frcastil@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/26 21:32:49 by W2Wizard          #+#    #+#              #
-#    Updated: 2023/07/06 13:15:13 by anttorre         ###   ########.fr        #
+#    Updated: 2024/01/02 17:09:00 by frcastil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
